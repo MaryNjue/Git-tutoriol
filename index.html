@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Tutorial</title>
+</head>
+<body >
+    <h1 style="text-align: center;">GIT</h1>
+    <h2 style="text-align: center;">Everything you need to know about GIT</h2>
+    <p style="text-align: center;">Git is a free and open source distributed <em>version control system</em> designed to handle everything from small to very large projects with speed and efficiency.<br>
+       <b> Version control system (VCS)</b> is a software tool that helps software teams manage changes to source code over time. It allows multiple developers to <br>collaborate on the same files, tracks every change, and maintains a record of each modification, including authorship, timestamp, and other details.<br>
+       Git is easy to learn and practice and also extremely useful to other platforms like Github.</br>
+       <b>GitHub</b>is a developer platform that allows developers to create, store, manage and share their code. It uses Git software, providing the distributed version control of Git plus access control, bug tracking, software feature requests, task management, continuous integration, and wikis for every project.<br>
+       There are other alternative Version control softwares e.g SubVersion(SVN), Mercurial, Bitbucket, GitLab, Perforce, Bazaar, Fossil, Darcs. <br
+       >All this version control softwares are good but Git is a fast, distributed version control system with powerful branching and merging capabilities, making it ideal for collaborative development.
+    </p>
+    <h2>1. Installing Git</h2>
+        <p>First check if git is installed in your machine. To check that open your command prompt and type:</p>
+        <p style="font-size: large;"><code>git --version</code><br><p>
+        <img src="/Images/git 1.png" alt="Git Version Command prompt">
+        <p class="caption">Checking Git version</p>
+        <p>If Git is not installed, download and install it from <a href="https://git-scm.com/downloads">Git's official website</a>.</p>
+
+        <h2>2. Configuring Git</h2>
+        <p>Next step is to configure your Git username and email by typing the following commands in your command prompt:
+        <code style="font-size: large;">git config --global user.name "Your Name"</code><br>
+        <code style="font-size: large;">git config --global user.email "your.email@example.com"</code></p>
+        <img src="/Images/git 2.png" alt="Git Config Commands" class="screenshot">
+
+        <h2>3. Initializing a Git Repository</h2>
+        <p>A Git repository is a directory where Git tracks changes to files. To initalize your repository open your command prompt in the directory where you have stored the files and type:
+        <code style="font-size: large;">git init</code></p>
+        <img src="/Images/git 3.png" alt="Git Init Command" class="screenshot">
+        <p class="caption">Initializing a Git repository</p>
+
+        <h2>4. Adding Files to the Staging Area</h2>
+        <p>The staging area is where you prepare files to be committed. Type this in the command prompt:</p>
+        <code style="font-size: large;">git add filename</code>
+        <p>To add all files type
+        <code style="font-size: large;">git add .</code></p>
+        <img src="/Images/git 4.png">
+        <p class="caption">Adding files to the staging area</p>
+
+        <h2>5. Committing Changes</h2>
+        <p>Next you have to commit your changes with a message describing the changes you've made to the file, use:
+        <code style="font-size: large;">git commit -m "Your commit message"</code>
+        <p>To view past commits:</p>
+        <code style="font-size: large;">git log</code>
+        <p>To revert to a particular commit:</p>
+        <code style="font-size: large;">git checkout commit_hash</code>></p>
+        <img src="/Images/git 5.png" class="screenshot">
+        <p class="caption">Committing changes</p>
+
+        <h2>6. Creating a Branch</h2>
+        <h2>Branches</h2>
+        <p>Branches are one of git features where it allow you to work on different versions of your project simultaneously. They are essential for managing features and fixes separately.
+        <p>To create a new branch type:</p>
+        <code style="font-size: large;">git branch branch_name</code></p>
+        <img src="/Images/git 6.png" alt="Git Branch Command" class="screenshot">
+        <p class="caption">Creating a branch</p>
+
+        <h2>7. Viewing All Branches</h2>
+        <p>To view all branches and see the active one type:
+        <code style="font-size: large;">git branch</code></p>
+        <img src="/Images/git 7.png" class="screenshot">
+        <p class="caption">Viewing all branches</p>
+
+        <h2>8. Switching Active Branches</h2>
+        <p>By default the active branch is Master to change that type:
+        <code style="font-size: large;">git switch branch_name</code></p>
+        <img src="/Images/git 8.png" class="screenshot">
+        <p class="caption">Switching branches</p>
+
+        <h2>9. Merging a Branch</h2>
+        <p>Merge changes from one branch into another example merging the created branch with the master branch with:
+        <code style="font-size: large;">git merge branch_name</code></p>
+        <img src="/Images/git 9.png" alt="Git Merge Command">
+        <p class="caption">Merging branches</p>
+
+        <h2>10. Deleting a Branch</h2>
+        <p>To delete a branch type:
+        <code style="font-size: large;">git branch -d branch_name</code></p>
+        <img src="/Images/git 10.png" class="screenshot">
+        <p class="caption">Deleting a branch</p>
+
+        <h2>11.Have some Fun</h2>
+        <p>Explore more advanced Git concepts like rebasing and stashing, or integrate with GitHub for remote version control and collaboration.</p>
+
+        <h2>12. Deploy Your Page</h2>
+        <p>Deploy this page to a hosting platform like <a href="https://vercel.com">Vercel</a> or <a href="https://pages.github.com">GitHub Pages</a>. Follow their respective documentation for deployment steps.</p>
+
+        <footer>
+            <p>Congratulations! You are done!</p>
+        </footer>
+    </div>
+</body>
+</html>
